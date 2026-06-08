@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Chi Tiết Sản Phẩm</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+
+        <ul class="menu-left">
+            <li><a href="gioi-thieu.html">GIỚI THIỆU</a></li>
+            <li><a class="active" href="san-pham.html">THỰC ĐƠN</a></li>
+        </ul>
+
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assets/logo.png" alt="Highlands Coffee">
+            </a>
+        </div>
+
+        <ul class="menu-right">
+            <li><a href="lien-he.html">LIÊN HỆ</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<section class="product-detail">
+
+    <div class="detail-image">
+
+        <img id="productImage" src="" alt="Sản phẩm">
+
+    </div>
+
+    <div class="detail-info">
+
+        <h1 id="productName"></h1>
+
+        <p id="productPrice" class="price"></p>
+
+        <p id="productDesc"></p>
+
+        <button onclick="addProduct()">
+            Thêm Sản Phẩm
+        </button>
+
+        <a href="san-pham.html" class="back-btn">
+            Quay Lại Thực Đơn
+        </a>
+
+    </div>
+
+</section>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

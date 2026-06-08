@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+/* Header */
+
+header{
+    background-color:#b22830;
+    color:white;
+    padding:5px 0;
+
+}
+
+/* Menu */
+
+nav{
+    width:80%;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1fr auto 1fr;
+    align-items:center;
+}
+
+.menu-left{
+    display:flex;
+    gap:50px;
+    justify-content:flex-start;
+}
+
+.menu-right{
+    display:flex;
+    justify-content:flex-end;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:16px;
+}
+
+nav a:hover{
+    color:#F6D365;
+}
+
+.logo img{
+    width: 110px;
+}
+
+/* Trang chủ */
+
+.home{
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.home h2{
+    margin-bottom: 15px;
+}
+
+/* Giới thiệu và liên hệ */
+
+.content{
+    width: 80%;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.content h2{
+    margin-bottom: 20px;
+    color: #5c2d0c;
+}
+
+.content p{
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Danh sách sản phẩm */
+
+.product-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+}
+
+.card{
+    width: 280px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card h3{
+    margin-top: 15px;
+}
+
+.card p{
+    color: red;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card button{
+    margin-bottom: 15px;
+}
+
+/* Trang chi tiết */
+
+.detail{
+    width: 70%;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.detail h2{
+    color: #5c2d0c;
+    margin-bottom: 15px;
+}
+
+.detail p{
+    margin-bottom: 15px;
+}
+
+/* Button */
+
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5c2d0c;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #7d4217;
+}
+
+/* Link */
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #a3561d;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content,
+    .detail{
+        width: 90%;
+    }
+}
+
+/* Banner */
+
+.banner{
+    width:100%;
+}
+
+.banner img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+ul{
+    list-style: none;
+}
+
+.active{
+    color:#F6D365 !important;
+}
+
+/* Trang giới thiệu */
+
+.about-page{
+    width: 85%;
+    margin: 40px auto;
+}
+
+.page-title{
+    text-align: center;
+    color: #53382c;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.info-box{
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+
+    border-left: 6px solid #b22830;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.info-box h1{
+    color: #b22830;
+    margin-bottom: 10px;
+}
+
+.info-box h5{
+    color: #53382c;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.info-box p{
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.info-box a{
+    color:#b22830;
+    text-decoration:none;
+    font-size:16px;
+}
+.email{
+    color:#b22830;
+}
+
+ /* trang sản phẩm */
+ .menu-title{
+    text-align:center;
+    margin:40px 0;
+}
+
+.menu-title h1{
+    color:#53382c;
+    margin-bottom:10px;
+}
+
+.menu-title p{
+    color:#777;
+}
+
+.product-container{
+    width:90%;
+    margin:auto;
+
+    display:flex;
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:30px;
+
+    padding-bottom:50px;
+}
+
+.card{
+    width:280px;
+
+    background:white;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+
+    object-fit:cover;
+}
+
+.card h3{
+    margin-top:15px;
+
+    color:#53382c;
+}
+
+.card p{
+    color:#b22830;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    margin:15px 0;
+}
+
+.card button{
+    background:#b22830;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 20px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    margin-bottom:20px;
+}
+
+.card button:hover{
+    background:#53382c;
+}
+
+.category-title{
+    width:90%;
+    margin:50px auto 20px;
+
+    color:#53382c;
+
+    border-left:6px solid #b22830;
+
+    padding-left:15px;
+
+    font-size:28px;
+}
+
+/* Chi tiết sản phẩm */
+
+.product-detail{
+
+    width:90%;
+    margin:50px auto;
+
+    display:flex;
+
+    gap:50px;
+
+    align-items:center;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.detail-image{
+    flex:1;
+    text-align:center;
+}
+
+.detail-image img{
+    width:350px;
+    max-width:100%;
+    border-radius:10px;
+    object-fit:cover;
+}
+
+.detail-info{
+    flex:1;
+}
+
+.detail-info h1{
+
+    color:#53382c;
+
+    margin-bottom:20px;
+}
+
+.price{
+
+    color:#b22830;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    margin-bottom:20px;
+}
+
+.detail-info p{
+
+    line-height:1.8;
+
+    text-align:justify;
+}
+
+.detail-info button{
+
+    margin-top:25px;
+
+    background:#b22830;
+}
+
+.detail-info button:hover{
+
+    background:#53382c;
+}
+
+.back-btn{
+
+    display:inline-block;
+
+    margin-left:15px;
+
+    color:#53382c;
+}
+
+/* Trang liên hệ */
+.contact-item{
+    margin:5px 0;
+    padding-bottom:15px;
+}
+
+.contact-item h3{
+    color:#b22830;
+    margin-bottom:8px;
+}
+
+.contact-item p{
+    margin:0;
+}
+
+.contact-item a{
+    color:#b22830;
+    word-break:break-all;
+}
